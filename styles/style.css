@@ -1,0 +1,39 @@
+
+:root{
+    --main-color: #e84242;
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+
+/*! base HTML codes*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+/*! header start*/
+.header .logo img {
+    height: 10rem;
+  }
+
+  .header{
+    background-color: white;
+  }
+/*! header end*/ 
+
+
