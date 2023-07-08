@@ -27,7 +27,7 @@ body {
 
 /*! header start*/
 .header .logo img {
-  height: 10rem;
+  height: 5rem;
 }
 
 header {
@@ -35,5 +35,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /*bu komut sayesinde headerımız her zaman katman olarak en üstte kalıcak ve gözükecek.*/
+}
+/* yukarıdaki komutlar ile header arka planını beyaz yaptık, gölge ekledik, header içerisindeki itemleri merkeze yerleştirdik ve header kısmının tümünü üste (0 noktasına) yapıştırdık*/
+
+header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
 }
 /*! header end*/
