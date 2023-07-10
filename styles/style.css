@@ -25,9 +25,24 @@ body {
   background-color: var(--main-color);
 }
 
+section {
+  padding: 3.5rem 7%;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem; /*yukarıdan aşağıdan 2, sağdan soldan 3.75 rem olarak boyutunu ayarladık*/
+  border-radius: 30rem; /*butonun köşelerinin eğimli olmasını sağlar*/
+  font-size: 1.7rem;
+  color: #fff; /*buton içi yazı rengini beyaz olmasını ayarladık*/
+  background-color: var(--black-color); /*buton arka planını varsayılan olarak siyah yaptık*/ 
+}
+
 /*! header start*/
 .header .logo img {
-  height: 5rem;
+  height: 0.5rem;
+
 }
 
 header {
@@ -37,31 +52,57 @@ header {
   justify-content: space-between;
   padding: 0 7%;
   margin: 2rem 7%;
-  border-radius: 30rem;
-  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  height: 15rem;
+  border-radius: 30rem; /*headerin köşelerinin keskinliğini azaltmaktadır*/
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75); /*box-shadow komutu headerin etrafına siyah gölge vermektedir*/
   position: sticky;
   top: 0;
   z-index: 1000; /*bu komut sayesinde headerımız her zaman katman olarak en üstte kalıcak ve gözükecek.*/
 }
 /* yukarıdaki komutlar ile header arka planını beyaz yaptık, gölge ekledik, header içerisindeki itemleri merkeze yerleştirdik ve header kısmının tümünü üste (0 noktasına) yapıştırdık*/
 
-header .navbar a{
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    color: var(--black-color);
-    border-bottom: 0.1rem solid transparent;
+header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
 }
 
-header .navbar .active,
-header .navbar a:hover{
+.header .navbar .active,
+header .navbar a:hover {
   border-color: var(--main-color);
   padding-bottom: 0.5rem;
 }
 
-header .buttons button{
+header .buttons button {
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 2rem;
   background-color: transparent;
 }
 /*! header end*/
+
+/*! home start*/
+.home {
+  min-height: 100vh;
+  background-color: brown;
+  margin-top: -24.5rem; /*arkaplanın tüm sayfayı kaplamasını sağladık. header hala önde duruyor.*/
+  display: flex;
+  align-items: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+.home .content h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+.home .content p {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #ccc;
+}
+/*! home end*/
