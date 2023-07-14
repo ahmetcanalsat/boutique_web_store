@@ -13,7 +13,7 @@
   transition: 0.2s ease;
 }
 
-/*! base HTML codes*/
+/*! base HTML codes */
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -29,20 +29,24 @@ section {
   padding: 3.5rem 7%;
 }
 
-.btn{
+.btn {
   margin-top: 1rem;
   display: inline-block;
   padding: 2rem 3.75rem; /*yukarıdan aşağıdan 2, sağdan soldan 3.75 rem olarak boyutunu ayarladık*/
   border-radius: 30rem; /*butonun köşelerinin eğimli olmasını sağlar*/
   font-size: 1.7rem;
   color: #fff; /*buton içi yazı rengini beyaz olmasını ayarladık*/
-  background-color: var(--black-color); /*buton arka planını varsayılan olarak siyah yaptık*/ 
+  background-color: var(
+    --black-color
+  ); /*buton arka planını varsayılan olarak siyah yaptık*/
 }
 
-/*! header start*/
+.btn:hover{
+  opacity: 0.8;
+}
+/*! header start */
 .header .logo img {
   height: 0.5rem;
-
 }
 
 header {
@@ -80,9 +84,9 @@ header .buttons button {
   margin-left: 2rem;
   background-color: transparent;
 }
-/*! header end*/
+/*! header end */
 
-/*! home start*/
+/*! home start */
 .home {
   min-height: 100vh;
   background-color: brown;
@@ -105,4 +109,56 @@ header .buttons button {
   padding: 1rem 0;
   color: #ccc;
 }
-/*! home end*/
+/*! home end */
+
+/*! urunler start */
+
+.urunler h1{
+  color: black;
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.2rem solid white;
+}
+
+.urunler .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.urunler .box-container .box{
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  background-color: #fff;
+  min-height: 53rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.urunler .box-container .box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.urunler .box-container .box .urun-kategori{
+  font-size: 1.4rem;
+  text-transform: uppercase; /* tüm harfleri büyük olarak düzenler */
+}
+
+.urunler .box-container .box .price{
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  font-weight: 500;/* yazı kalınlığını değiştirir */
+}
+
+.urunler .box-container .box .price span{
+  font-size: 1.5rem;
+  text-decoration: line-through;/* span içindeki yazıların üzerine çizgi atar */
+  font-weight: 250;
+}
+/*! urunler end */
