@@ -21,16 +21,16 @@ html {
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   width: 0.8rem;
   background-color: white;
 } /*KENARDAKİ KAYDIRMA ÇUBUĞUNU OLUŞTURDUK VE ÖZELLİKLERİNİ AYARLADIK*/
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background-color: transparent;
 } /*KENARDAKİ KAYDIRMA ÇUBUĞUNUN İLERLEYECEĞİ YOLUN ARKA PLAN RENGİNİ AYARLADIK.*/
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   border-radius: 3rem;
   background-color: var(--black-color);
 } /*KENARDAKİ KAYDIRMA ÇUBUĞUNU OLUŞTURDUK VE YUKARI AŞAĞI KAYDIĞINI GÖSTEREN İÇERİSİNDEKİ ÇUBUĞUN ÖZELLİKLERİNİ TANIMLADIK.*/
@@ -42,6 +42,11 @@ body {
 section {
   padding: 3.5rem 7%;
 } /* Yukarıdaki komut sağdan ve soldan 3.5rem(35px) oranında boşluk kalmasını sağlar.*/
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
 
 .btn {
   margin-top: 1rem;
@@ -59,8 +64,6 @@ section {
   opacity: 0.8; /*BUTONLARIN ÜSTÜNE GELDİĞİNİ BELLİ EDEN BİR ANİMASYON YAPAR.*/
 }
 
-
-
 .heading {
   color: var(--black-color);
   text-transform: uppercase;
@@ -73,8 +76,6 @@ section {
   color: #fff;
   text-transform: uppercase;
 }
-
-
 
 /*! header start */
 .header .logo img {
@@ -118,8 +119,6 @@ header .buttons button {
 }
 /*! header end */
 
-
-
 /*! home start */
 .home {
   min-height: 100vh;
@@ -144,8 +143,6 @@ header .buttons button {
   color: #ccc;
 }
 /*! home end */
-
-
 
 /*! kampanyalı urunler start */
 
@@ -190,8 +187,54 @@ header .buttons button {
 }
 /*! kampanyalı urunler end */
 
-
-
 /* !URUNLER START */
+.urunler .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  /* box-container etiketine sahip her ürünü grid yapısına sokar.*/
+}
+
+.urunler .box-container .box {
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  border-radius: 3rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  /*box-container classı içindeki box classlarına yukarıda belirtilmiş görünüşleri verir.*/
+}
+
+.urunler .box-container .box .box-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+
+.urunler .box-container .box .box-head .title {
+  font-size: 1.4rem;
+}
+
+.urunler .box-container .box .box-head .name {
+  font-size: 3rem;
+  font-weight: bold; /* yazı fontunun kalın olmasını sağlar. */
+  text-align: start;
+  overflow-wrap: anywhere; /* textin kutucuktan dışarı taşmamasını sağlar. */
+}
+
+.urunler .box-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+}
 
 /* !URUNLER END */
