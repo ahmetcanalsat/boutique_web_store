@@ -145,7 +145,6 @@ header .buttons button {
 /*! home end */
 
 /*! kampanyalı urunler start */
-
 .kampanya_urunler .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -219,7 +218,7 @@ header .buttons button {
 .urunler .box-container .box .box-head .title {
   font-size: 1.4rem;
 }
-
+/* ÜRÜNLER CSS LERİ TEKRAR KONTROL EDİLECEK HATA VAR!!!!!!!! */
 .urunler .box-container .box .box-head .name {
   font-size: 3rem;
   font-weight: bold; /* yazı fontunun kalın olmasını sağlar. */
@@ -236,5 +235,37 @@ header .buttons button {
   transform: translate(-50%, -50%);
   border-radius: 3rem;
 }
-
 /* !URUNLER END */
+
+/* !HAKKIMIZDA START */
+.hakkimizda .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem; /* Yazı ile resim arasına 20 pixel kadar boşluk bırakır. */
+}
+
+.hakkimizda .row .image {
+  flex: 1 1 45rem;
+}
+
+.hakkimizda .row img {
+  width: 100%;
+}
+
+.hakkimizda .row .content{
+  flex: 1 1 45rem;
+}
+
+.hakkimizda .row .content h3{
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hakkimizda .row .content p{
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+/* !HAKKIMIZDA END */
