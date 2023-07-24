@@ -218,7 +218,7 @@ header .buttons button {
 .urunler .box-container .box .box-head .title {
   font-size: 1.4rem;
 }
-/* ÜRÜNLER CSS LERİ TEKRAR KONTROL EDİLECEK HATA VAR!!!!!!!! */
+
 .urunler .box-container .box .box-head .name {
   font-size: 3rem;
   font-weight: bold; /* yazı fontunun kalın olmasını sağlar. */
@@ -234,6 +234,39 @@ header .buttons button {
   object-fit: cover;
   transform: translate(-50%, -50%);
   border-radius: 3rem;
+}
+
+.urunler .box-container .box-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.urunler .box-container .box-bottom .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.urunler .box-container .box-bottom .info .price {
+  font-size: 2rem;
+}
+
+.urunler .box-container .box-bottom .urunler-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem solid var(--main-color);
+}
+
+.urunler .box-container .box-bottom .urunler-btn a i {
+  font-size: 1.6rem;
+  color: var(--main-color);
 }
 /* !URUNLER END */
 
@@ -252,17 +285,17 @@ header .buttons button {
   width: 100%;
 }
 
-.hakkimizda .row .content{
+.hakkimizda .row .content {
   flex: 1 1 45rem;
 }
 
-.hakkimizda .row .content h3{
+.hakkimizda .row .content h3 {
   font-size: 3rem;
   color: #fff;
   text-transform: uppercase;
 }
 
-.hakkimizda .row .content p{
+.hakkimizda .row .content p {
   font-size: 1.6rem;
   color: #ccc;
   padding: 1rem 0;
