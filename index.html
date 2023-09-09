@@ -1,422 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>boutique_web_store</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>boutique_web_store</title>
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
+  <body>
+    <!--! header section start-->
+    <header class="header">
+      <a href="#">
+        <img src="images/logo.png" alt="sirketlogo" />
+      </a>
+      <nav class="navbar">
+        <a href="#" class="active">Ana Sayfa</a>
+        <a href="#" class="">Ürünler</a>
+        <a href="#" class="">Hakkımızda</a>
+        <a href="#" class="">İncelemeler</a>
+        <a href="#" class="">İletişim</a>
+        <a href="#" class="">Blog</a>
+      </nav>
 
-<body>
-  <!--! header section start-->
-  <header class="header">
-    <a href="#">
-      <img src="images/logo.png" alt="sirketlogo" />
-    </a>
-    <nav class="navbar">
-      <a href="#" class="active">Ana Sayfa</a>
-      <a href="#" class="">Ürünler</a>
-      <a href="#" class="">Hakkımızda</a>
-      <a href="#" class="">İncelemeler</a>
-      <a href="#" class="">İletişim</a>
-      <a href="#" class="">Blog</a>
-    </nav>
+      <div class="buttons">
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
 
-    <div class="buttons">
-      <button>
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="search here"
+        />
         <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <button>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-      <button id="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
+      </div>
 
-    <div class="search-form">
-      <input
-       type="text"
-       class="search-input"
-       id="search-box" 
-       placeholder="search here"
-       />
-       <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-
-    <div class="cart-items-container">
-      <div class="cart-item">
-        <i class="fa-solid fa-xmark"></i>
-        <img src="images/bileklik_1.png" alt="bileklik_1">
-        <div class="content">
-          <h3>cart item 01</h3>
-          <div class="price">$19.99</div>
-        </div>
-      </div>
-      <div class="cart-item">
-        <i class="fa-solid fa-xmark"></i>
-        <img src="images/kupe_1.png" alt="kupe_1">
-        <div class="content">
-          <h3>cart item 02</h3>
-          <div class="price">$9.99</div>
-        </div>
-      </div>
-      <div class="cart-item">
-        <i class="fa-solid fa-xmark"></i>
-        <img src="images/kolye_1.png" alt="kolye_1">
-        <div class="content">
-          <h3>cart item 03</h3>
-          <div class="price">$24.99</div>
-        </div>
-      </div>
-      <div class="cart-item">
-        <i class="fa-solid fa-xmark"></i>
-        <img src="images/dogal_tas_bileklik.png" alt="dogal_tas_bileklik">
-        <div class="content">
-          <h3>cart item 04</h3>
-          <div class="price">$14.99</div>
-        </div>
-      </div>
-      
-      <a href="#" class="btn">Checkout Now</a>
-    </div>
-  </header>
-  <!--! header section end-->
-
-  <!--! anasayfa section start-->
-  <section class="home">
-    <div class="content">
-      <h2>EN ŞIK AKSESUARLARINIZ</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-  <!--! anasayfa section end-->
-
-  <!--!kampanyalı ürünler section start-->
-  <section class="kampanya_urunler">
-    <h1 class="heading">Kampanyalı <span>Ürünlerimiz</span></h1>
-    <div class="box-container">
-      <div class="box">
-        <div class="box-head">
-          <img src="/images/kolye_1.png" alt="urun1" />
-          <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
-          <br />
-          <span class="urun-kategori">Kolye</span>
-          <h3>Altın Kalpli Kolye</h3>
-          <!--Ürünün gösterilecek ismi-->
-          <div class="price">$17.99 <span>$24.99</span></div>
-        </div>
-        <div class="box-bottom">
-          <a href="" class="btn">Sepete Ekle</a>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <img src="/images/bileklik_1.png" alt="urun2" />
-          <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
-          <br />
-          <span class="urun-kategori">Bileklik</span>
-          <h3>Altın Zincir Bileklik</h3>
-          <!--Ürünün gösterilecek ismi-->
-          <div class="price">$7.99 <span>$15.99</span></div>
-        </div>
-        <div class="box-bottom">
-          <a href="" class="btn">Sepete Ekle</a>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <img src="/images/kupe_1.png" alt="urun3" />
-          <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
-          <br />
-          <span class="urun-kategori">Küpe</span>
-          <h3>Mavi Zümrüt Küpe</h3>
-          <!--Ürünün gösterilecek ismi-->
-          <div class="price">$9.99 <span>$14.99</span></div>
-        </div>
-        <div class="box-bottom">
-          <a href="" class="btn">Sepete Ekle</a>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <img src="/images/bestasyuzuk_1.png" alt="urun4" />
-          <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
-          <br />
-          <span class="urun-kategori">Yüzük</span>
-          <h3>Beş Taşlı Pırlanta Yüzük</h3>
-          <!--Ürünün gösterilecek ismi-->
-          <div class="price">$49.99 <span>$74.99</span></div>
-        </div>
-        <div class="box-bottom">
-          <a href="" class="btn">Sepete Ekle</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--!kampanyalı ürünler section end-->
-
-  <!--! ÜRÜNLER SECTION START -->
-  <section class="urunler">
-    <h1 class="heading">Ürünlerimiz</h1>
-    <div class="box-container">
-      <div class="box">
-        <div class="box-head">
-          <span class="title">YÜZÜK</span>
-          <a href="#" class="name">Grek Desenli Eklem Yüzüğü</a>
-        </div>
-        <div class="image">
-          <img src="images/grek_desenli_eklem_yuzugu.png" alt="grek_eklem_yuzugu" />
-        </div>
-        <div class="box-bottom">
-          <div class="info">
-            <b class="price">$23.99</b>
-          </div>
-          <div class="urunler-btn">
-            <a href="#">
-              <i class="fa-solid fa-plus"></i>
-            </a>
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <i class="fa-solid fa-xmark"></i>
+          <img src="images/bileklik_1.png" alt="bileklik_1" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">$19.99</div>
           </div>
         </div>
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <span class="title">BİLEKLİK</span>
-          <a href="#" class="name">Doğal Taş Bileklik</a>
+        <div class="cart-item">
+          <i class="fa-solid fa-xmark"></i>
+          <img src="images/kupe_1.png" alt="kupe_1" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">$9.99</div>
+          </div>
         </div>
-        <div class="image">
+        <div class="cart-item">
+          <i class="fa-solid fa-xmark"></i>
+          <img src="images/kolye_1.png" alt="kolye_1" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">$24.99</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fa-solid fa-xmark"></i>
           <img src="images/dogal_tas_bileklik.png" alt="dogal_tas_bileklik" />
-        </div>
-        <div class="box-bottom">
-          <div class="info">
-            <b class="price">$9.99</b>
-          </div>
-          <div class="urunler-btn">
-            <a href="#">
-              <i class="fa-solid fa-plus"></i>
-            </a>
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">$14.99</div>
           </div>
         </div>
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <span class="title">PIERCING</span>
-          <a href="#" class="name">Rainbow Kaş Piercing</a>
-        </div>
-        <div class="image">
-          <img src="images/rainbow_kas_piercing.png" alt="rainbow_kas_piercing" />
-        </div>
-        <div class="box-bottom">
-          <div class="info">
-            <b class="price">$4.99</b>
-          </div>
-          <div class="urunler-btn">
-            <a href="#">
-              <i class="fa-solid fa-plus"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--! ÜRÜNLER SECTION END -->
 
-  <!--! HAKKIMIZDA SECTION START -->
-  <section class="hakkimizda">
-    <h1 class="heading">Hakkımızda</h1>
-    <div class="row">
-      <!-- HAKKIMIZDA KISMI İÇİN FOTOĞRAF BELİRLENECEK -->
-      <div class="image">
-        <img src="/images/degisecek.png" alt="hakkimizda.png" />
+        <a href="#" class="btn">Checkout Now</a>
       </div>
+    </header>
+    <!--! header section end-->
+
+    <!--! anasayfa section start-->
+    <section class="home">
       <div class="content">
-        <h3>nulla facilisi etiam dignissim diam quis</h3>
+        <h2>EN ŞIK AKSESUARLARINIZ</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
-          vehicula ipsum a arcu cursus vitae congue mauris. In cursus turpis
-          massa tincidunt dui ut ornare lectus. In cursus turpis massa
-          tincidunt dui. Posuere urna nec tincidunt praesent semper feugiat.
-          Amet venenatis urna cursus eget nunc. Ut placerat orci nulla
-          pellentesque dignissim enim sit. Sit amet tellus cras adipiscing
-          enim eu turpis.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-
-        <p>
-          Dui id ornare arcu odio ut sem nulla pharetra. Sem nulla pharetra
-          diam sit amet nisl. Metus aliquam eleifend mi in. In mollis nunc sed
-          id semper risus in hendrerit gravida. Dolor sed viverra ipsum nunc
-          aliquet bibendum enim. Pretium viverra suspendisse potenti nullam ac
-          tortor vitae purus faucibus. Lectus sit amet est placerat in egestas
-          erat imperdiet sed. Id ornare arcu odio ut sem nulla pharetra diam.
-          Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-          iaculis eu non diam phasellus.
-        </p>
-        <a href="#" class="btn">Learn More</a>
+        <a href="#" class="btn">Buy Now</a>
       </div>
-    </div>
-  </section>
-  <!--! HAKKIMIZDA SECTION END -->
+    </section>
+    <!--! anasayfa section end-->
 
-  <!--! İNCELEME SECTION START-->
-  <section class="inceleme">
-    <h1 class="heading">Kullanıcı <span>İncelemeleri</span></h1>
-    <div class="box-container">
-      <div class="box">
-        <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
-          tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
-          ullamcorper malesuada proin libero. Eget nulla facilisi etiam
-          dignissim. Enim praesent elementum facilisis leo vel fringilla est.
-          Mattis aliquam faucibus purus in massa tempor nec feugiat.
-        </p>
-        <img src="/images/avatar1.png" alt="avatar" class="user">
-        <h3>Mike Black</h3>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star-half-stroke"></i>
+    <!--!kampanyalı ürünler section start-->
+    <section class="kampanya_urunler">
+      <h1 class="heading">Kampanyalı <span>Ürünlerimiz</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="/images/kolye_1.png" alt="urun1" />
+            <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
+            <br />
+            <span class="urun-kategori">Kolye</span>
+            <h3>Altın Kalpli Kolye</h3>
+            <!--Ürünün gösterilecek ismi-->
+            <div class="price">$17.99 <span>$24.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="" class="btn">Sepete Ekle</a>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
-          tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
-          ullamcorper malesuada proin libero. Eget nulla facilisi etiam
-          dignissim. Enim praesent elementum facilisis leo vel fringilla est.
-          Mattis aliquam faucibus purus in massa tempor nec feugiat.
-          Duis at
-          tellus at urna condimentum mattis.Nunc pulvinar sapien et ligula
-          ullamcorper malesuada proin libero.
-        </p>
-        <img src="/images/avatar2.png" alt="avatar" class="user">
-        <h3>Jennifer Morez</h3>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star-half-stroke"></i>
+        <div class="box">
+          <div class="box-head">
+            <img src="/images/bileklik_1.png" alt="urun2" />
+            <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
+            <br />
+            <span class="urun-kategori">Bileklik</span>
+            <h3>Altın Zincir Bileklik</h3>
+            <!--Ürünün gösterilecek ismi-->
+            <div class="price">$7.99 <span>$15.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="" class="btn">Sepete Ekle</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="/images/kupe_1.png" alt="urun3" />
+            <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
+            <br />
+            <span class="urun-kategori">Küpe</span>
+            <h3>Mavi Zümrüt Küpe</h3>
+            <!--Ürünün gösterilecek ismi-->
+            <div class="price">$9.99 <span>$14.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="" class="btn">Sepete Ekle</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="/images/bestasyuzuk_1.png" alt="urun4" />
+            <!--img etiketi içindeki src resimin yolunu belirtir. Alt komutu ise resimler yüklenmezse yazılacak olan yazıyı belirtir.-->
+            <br />
+            <span class="urun-kategori">Yüzük</span>
+            <h3>Beş Taşlı Pırlanta Yüzük</h3>
+            <!--Ürünün gösterilecek ismi-->
+            <div class="price">$49.99 <span>$74.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="" class="btn">Sepete Ekle</a>
+          </div>
         </div>
       </div>
-      <div class="box">
-        <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
-          tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
-          ullamcorper malesuada proin libero.
-        </p>
-        <img src="images/avatar3.png" alt="avatar" class="user">
-        <h3>Monica White</h3>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+    </section>
+    <!--!kampanyalı ürünler section end-->
+
+    <!--! ÜRÜNLER SECTION START -->
+    <section class="urunler">
+      <h1 class="heading">Ürünlerimiz</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <span class="title">YÜZÜK</span>
+            <a href="#" class="name">Grek Desenli Eklem Yüzüğü</a>
+          </div>
+          <div class="image">
+            <img
+              src="images/grek_desenli_eklem_yuzugu.png"
+              alt="grek_eklem_yuzugu"
+            />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$23.99</b>
+            </div>
+            <div class="urunler-btn">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">BİLEKLİK</span>
+            <a href="#" class="name">Doğal Taş Bileklik</a>
+          </div>
+          <div class="image">
+            <img src="images/dogal_tas_bileklik.png" alt="dogal_tas_bileklik" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$9.99</b>
+            </div>
+            <div class="urunler-btn">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">PIERCING</span>
+            <a href="#" class="name">Rainbow Kaş Piercing</a>
+          </div>
+          <div class="image">
+            <img
+              src="images/rainbow_kas_piercing.png"
+              alt="rainbow_kas_piercing"
+            />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$4.99</b>
+            </div>
+            <div class="urunler-btn">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--! İNCELEME SECTION END-->
+    </section>
+    <!--! ÜRÜNLER SECTION END -->
 
-  <!--! İLETİŞİM START -->
-  <section class="iletisim">
-    <h1 class="heading">Bize <span>Ulaşın</span></h1>
-    <div class="row">
-      <iframe class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.41943307314!2d29.083418120561735!3d41.02460417529083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac85c06fc118f%3A0x7913c7594cc6a34d!2zw5xtcmFuaXll!5e0!3m2!1str!2str!4v1690286194341!5m2!1str!2str"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <form>
-        <h3>İletişime Geç</h3>
-        <div class="inputBox">
-          <i class="fa-solid fa-user"></i>
-          <input type="text" placeholder="Ad-Soyad">
-        </div>
-        <div class="inputBox">
-          <i class="fa-regular fa-envelope"></i>
-          <input type="email" placeholder="E-Mail">
-        </div>
-        <div class="inputBox">
-          <i class="fa-solid fa-phone"></i>
-          <input type="number" placeholder="Telefon">
-        </div>
-        <input type="submit" class="btn" value="Gönder">
-      </form>
-    </div>
-    </div>
-  </section>
-  <!--! İLETİŞİM END-->
-
-  <!--! BLOG START-->
-  <section class="blog">
-    <h1 class="heading">BLOG</h1>
-    <div class="box-container">
-      <div class="box">
+    <!--! HAKKIMIZDA SECTION START -->
+    <section class="hakkimizda">
+      <h1 class="heading">Hakkımızda</h1>
+      <div class="row">
+        <!-- HAKKIMIZDA KISMI İÇİN FOTOĞRAF BELİRLENECEK -->
         <div class="image">
-          <img src="/images/blog_1resim.png" alt="blog_1">
+          <img src="/images/degisecek.png" alt="hakkimizda.png" />
         </div>
         <div class="content">
-          <a href="#" class="title">How to make jewelry?</a> <!--a etiketi verinin tıklanabilir olmasını sağlar-->
-          <span>by admin / 10th may, 2022 </span>
-          <p>quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc
-            consequat interdum varius sit amet mattis</p>
-          <a href="#" class="btn">Read More</a>
+          <h3>nulla facilisi etiam dignissim diam quis</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
+            vehicula ipsum a arcu cursus vitae congue mauris. In cursus turpis
+            massa tincidunt dui ut ornare lectus. In cursus turpis massa
+            tincidunt dui. Posuere urna nec tincidunt praesent semper feugiat.
+            Amet venenatis urna cursus eget nunc. Ut placerat orci nulla
+            pellentesque dignissim enim sit. Sit amet tellus cras adipiscing
+            enim eu turpis.
+          </p>
+
+          <p>
+            Dui id ornare arcu odio ut sem nulla pharetra. Sem nulla pharetra
+            diam sit amet nisl. Metus aliquam eleifend mi in. In mollis nunc sed
+            id semper risus in hendrerit gravida. Dolor sed viverra ipsum nunc
+            aliquet bibendum enim. Pretium viverra suspendisse potenti nullam ac
+            tortor vitae purus faucibus. Lectus sit amet est placerat in egestas
+            erat imperdiet sed. Id ornare arcu odio ut sem nulla pharetra diam.
+            Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
+            iaculis eu non diam phasellus.
+          </p>
+          <a href="#" class="btn">Learn More</a>
         </div>
       </div>
-      <div class="box">
-        <div class="image">
-          <img src="/images/blog_2resim.png" alt="blog_2">
+    </section>
+    <!--! HAKKIMIZDA SECTION END -->
+
+    <!--! İNCELEME SECTION START-->
+    <section class="inceleme">
+      <h1 class="heading">Kullanıcı <span>İncelemeleri</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
+            tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
+            ullamcorper malesuada proin libero. Eget nulla facilisi etiam
+            dignissim. Enim praesent elementum facilisis leo vel fringilla est.
+            Mattis aliquam faucibus purus in massa tempor nec feugiat.
+          </p>
+          <img src="/images/avatar1.png" alt="avatar" class="user" />
+          <h3>Mike Black</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
         </div>
-        <div class="content">
-          <a href="#" class="title">History Of Accessories</a> <!--a etiketi verinin tıklanabilir olmasını sağlar-->
-          <span>by admin / 3rd feb, 2022 </span>
-          <p>quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc
-            consequat interdum varius sit amet mattis</p>
-          <a href="#" class="btn">Read More</a>
+        <div class="box">
+          <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
+            tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
+            ullamcorper malesuada proin libero. Eget nulla facilisi etiam
+            dignissim. Enim praesent elementum facilisis leo vel fringilla est.
+            Mattis aliquam faucibus purus in massa tempor nec feugiat. Duis at
+            tellus at urna condimentum mattis.Nunc pulvinar sapien et ligula
+            ullamcorper malesuada proin libero.
+          </p>
+          <img src="/images/avatar2.png" alt="avatar" class="user" />
+          <h3>Jennifer Morez</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/images/alıntı_sembolu.png" alt="inceleme_sembolü" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at
+            tellus at urna condimentum mattis. Nunc pulvinar sapien et ligula
+            ullamcorper malesuada proin libero.
+          </p>
+          <img src="images/avatar3.png" alt="avatar" class="user" />
+          <h3>Monica White</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--! BLOG END-->
+    </section>
+    <!--! İNCELEME SECTION END-->
 
-  <!--! FOOTER START-->
-  <section class="footer">
-    <div class="search">
-      <input type="text" class="search-input" placeholder="Search">
-      <button class="btn btn-primary">search</button>
-    </div>
-    <div class="share">
-      <a href="#" class="fa-brands fa-facebook"></a>
-      <a href="#" class="fa-brands fa-twitter"></a>
-      <a href="#" class="fa-brands fa-instagram"></a>
-    </div>
-    <div class="links">
-      <a href="#" class="">Ana Sayfa</a>
-      <a href="#" class="">Ürünler</a>
-      <a href="#" class="">Hakkımızda</a>
-      <a href="#" class="">İncelemeler</a>
-      <a href="#" class="">İletişim</a>
-      <a href="#" class="">Blog</a>
-    </div>
-    <div class="credit">
-      Created by <span>Ahmet Can ALSAT</span> | all rights reserved
-    </div>
-  </section>
-  <!--! FOOTER END-->
-</body>
+    <!--! İLETİŞİM START -->
+    <section class="iletisim">
+      <h1 class="heading">Bize <span>Ulaşın</span></h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.41943307314!2d29.083418120561735!3d41.02460417529083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac85c06fc118f%3A0x7913c7594cc6a34d!2zw5xtcmFuaXll!5e0!3m2!1str!2str!4v1690286194341!5m2!1str!2str"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form>
+          <h3>İletişime Geç</h3>
+          <div class="inputBox">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Ad-Soyad" />
+          </div>
+          <div class="inputBox">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="E-Mail" />
+          </div>
+          <div class="inputBox">
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" placeholder="Telefon" />
+          </div>
+          <input type="submit" class="btn" value="Gönder" />
+        </form>
+      </div>
+    </section>
+    <!--! İLETİŞİM END-->
 
+    <!--! BLOG START-->
+    <section class="blog">
+      <h1 class="heading">BLOG</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="/images/blog_1resim.png" alt="blog_1" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to make jewelry?</a>
+            <!--a etiketi verinin tıklanabilir olmasını sağlar-->
+            <span>by admin / 10th may, 2022 </span>
+            <p>
+              quis imperdiet massa tincidunt nunc pulvinar sapien et ligula
+              ullamcorper malesuada proin libero nunc consequat interdum varius
+              sit amet mattis
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="/images/blog_2resim.png" alt="blog_2" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">History Of Accessories</a>
+            <!--a etiketi verinin tıklanabilir olmasını sağlar-->
+            <span>by admin / 3rd feb, 2022 </span>
+            <p>
+              quis imperdiet massa tincidunt nunc pulvinar sapien et ligula
+              ullamcorper malesuada proin libero nunc consequat interdum varius
+              sit amet mattis
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! BLOG END-->
+
+    <!--! FOOTER START-->
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Search" />
+        <button class="btn btn-primary">search</button>
+      </div>
+      <div class="share">
+        <a href="#" class="fa-brands fa-facebook"></a>
+        <a href="#" class="fa-brands fa-twitter"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+      </div>
+      <div class="links">
+        <a href="#" class="">Ana Sayfa</a>
+        <a href="#" class="">Ürünler</a>
+        <a href="#" class="">Hakkımızda</a>
+        <a href="#" class="">İncelemeler</a>
+        <a href="#" class="">İletişim</a>
+        <a href="#" class="">Blog</a>
+      </div>
+      <div class="credit">
+        Created by <span>Ahmet Can ALSAT</span> | all rights reserved
+      </div>
+    </section>
+    <!--! FOOTER END-->
+  </body>
 </html>
