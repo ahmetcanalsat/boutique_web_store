@@ -17,7 +17,7 @@ const searchBtn =
   ); /* ID'si "search-btn" olan komut satırına ulaş. */
 
 const cartBtn = document.querySelector("#cart-btn");
-const menuBtn = document.querySelector("#menu-btn");
+const barBtn = document.querySelector("#bar-btn");
 
 searchBtn.addEventListener("click", function () {
   searchForm.classList.toggle("active");
@@ -49,11 +49,11 @@ cartBtn.addEventListener("click", function () {
   });
 });
 
-menuBtn.addEventListener("click", function () {
+barBtn.addEventListener("click", function () {
   navbar.classList.toggle("active");
   document.addEventListener("click", function (e) {
     if (
-      !e.composedPath().includes(menuBtn) &&
+      !e.composedPath().includes(barBtn) &&
       !e.composedPath().includes(navbar)
     ) {
       navbar.classList.remove("active");
