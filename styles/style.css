@@ -215,7 +215,7 @@ a {
   border-radius: unset;
 }
 
-#menu-btn {
+#bar-btn {
   display: none;
 }
 /*! header end */
@@ -646,7 +646,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  #menu-btn {
+  #bar-btn {
     display: inline-block;
   }
   .header .navbar {
@@ -656,10 +656,10 @@ a {
     height: calc(100vh - 9rem);
     width: 30rem;
     box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
-    right: 5%;
+    right: -100%;
   }
 
-  .header .navbar .active {
+  .header .navbar.active {
     right: 3rem;
   }
 
@@ -668,7 +668,7 @@ a {
     display: block; /* Yapının blok blok olmasını sağlayıp yan yana değil, alt alta sıralanmasını sağlamaktadır. */
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -677,7 +677,7 @@ a {
     font-size: 50%;
   }
 
-  .header .menu-btn{
+  .header .bar-btn{
     display: inline-block;
   }
 }
